@@ -15,7 +15,7 @@ const getUsers= async (req, res) => {
     }
 };
 
-// crear un nuevo usuario
+// crear un nuevo usuario   
 const postUsers = async (req, res) => {
     const {nameUser, email, passwordUser } = req.body;
     console.log(req.body);
