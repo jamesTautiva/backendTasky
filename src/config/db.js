@@ -18,7 +18,7 @@ sequelize.authenticate()
     console.log('error conected to database',err)
 })
 
-sequelize.sync({ force: true })  // Si deseas eliminar las tablas, pon `force: true`
+sequelize.sync({ force: false })  // Si deseas eliminar las tablas, pon `force: true`
   .then(() => {
     console.log('Tablas sincronizadas');
   })
