@@ -6,7 +6,7 @@ const {Sequelize} = require("sequelize");
 const sequelize = new Sequelize('trello','root', '0405',{
     hostname: 'localhost',
     dialect: 'mysql',
-    loggin: false,
+    loggin: false
 })
 
 
