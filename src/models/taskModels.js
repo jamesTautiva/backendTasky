@@ -47,6 +47,11 @@ created_at: {
 }, {
 timestamps: false,
 });
+Task.sync({force: false}).then(() => {
+    console.log('tareas creadas con éxito');
+}).catch((error) => {
+    console.error('Hubo un error al crear las tablas:', error);
+});
 
 
 module.exports = Task;
